@@ -1,56 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* -------- Distribución del contenido --------*/
 body {
-    margin: 0;
     font-family: "Montserrat", serif;
-    font-size: 16px;
-    background-color: #eee6;
     color: #0097D8;
+    margin: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-flow: row nowrap;
-    gap: 20px;
-
-}
-
-h1 {
-    font-size: 3em;
-    text-align: center;
-    border-bottom: 3px solid #fff;
-    margin-block: 0 20px;
-    padding-block: 15px;
-}
-
-h2 {
-    font-size: 3em;
-    margin: 0;
-}
-
-ul {
-    color: #000;
-}
-
-li {
-    margin-block-end: 10px;
-}
-
-a {
-    color: #4e6a94;
-    text-decoration: none;
-    font-weight: 800;
-    font-style: italic;
-    margin-inline-end: 3px;
-}
-
-.html {
-    color: #E54C21;
-}
-
-.css {
-    color: #0096DC;
-}
-
-.git-github {
-    color: #dbc157;
 }
 
 #bar {
@@ -61,3 +27,157 @@ a {
     top: 0;
 }
 
+#content {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    flex-grow: 1;
+}
+
+section {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-block-end: 20px;
+}
+
+/* -------- Diseño de los elementos --------*/
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 4.5em;
+    margin: 0;
+    min-width: 100px;
+    text-align: center;
+}
+
+.concepts {
+    padding-block-start: 15px;
+    flex-grow: 1;
+}
+
+.concepts a {
+    color: #20607e;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.concepts .html {
+    color: #ca3810;
+}
+
+.concepts .css {
+    color: #0097d8;
+}
+
+.concepts .git-github {
+    color: #12d633;
+}
+
+p {
+    margin-block-start: 5px;
+}
+
+#topics {
+    width: 420px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #0006;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+
+.topic {
+    display: flex;
+}
+
+.circle {
+    padding: 10px;
+    margin: 4px 5px 4px 0;
+    border-radius: 50%;
+}
+
+.topic:nth-of-type(1) .circle {
+    background-color: #20607e;
+}
+
+.topic:nth-of-type(2) .circle {
+    background-color: #12d633;
+}
+
+.topic:nth-of-type(3) .circle {
+    background-color: #ca3810;
+}
+
+.topic:nth-of-type(4) .circle {
+    background-color: #0097D8;
+}
+
+#menu {
+    padding: 10px 12px;
+    background-color: #2a1280;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #0003;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+#menu label {
+    font-weight: 600;
+    color: #fff;
+}
+
+#active-menu {
+    display: none;
+}
+
+#active-menu-icon {
+    cursor: pointer;
+    user-select: none;
+}
+
+#active-menu:checked + #active-menu-icon + #letter-links {
+    display: block;
+}
+
+#letter-links {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 10px #0003;
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    display: none;
+}
+
+#letter-links a {
+    color: inherit;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    padding-block: 4px;
+    display: block;
+}

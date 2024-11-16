@@ -18,9 +18,10 @@ Acceder al siguiente link de GitHub Pages: https://angeledv.github.io/glossary-m
 
 ## Desplegar el proyecto localmente
 
-Descargar el repositorio como archivo ZIP, o ejecutar el comando git clone.
-HTTPS: `git clone https://github.com/angeledv/glossary-module1.git`
-SSH: `git clone git@github.com:angeledv/glossary-module1.git`
+Descargar el repositorio como archivo ZIP, o ejecutar el comando git clone.<br>
+
+- HTTPS:<br> `git clone https://github.com/angeledv/glossary-module1.git`<br>
+- SSH:<br> `git clone git@github.com:angeledv/glossary-module1.git`
 
 Una vez que se tengan los archivos del repositorio localmente, abrir el archivo `index.html` en un navegador, de esta manera se podrá observar la página web con el glosario elaborado.
 
